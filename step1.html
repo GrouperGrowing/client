@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styleStep1.css" />
+		<title>Grouper</title>
+	</head>
+	<body>
+		<div id="page">
+			<div id="logo1">
+				<img src="grouper logo-03.png" width="300">
+			</div>
+			<div id="content">
+				<h2 id="welcomeH">בשביל מה היית מוכן לצאת מהבית?</h2>
+				<p>בכל שורה מילה אחת שמתארת פעילות שמעניינת אותך.</p>
+			</div>
+			<div class="register step">
+				<form id="act-form" action="step2.html" onSubmit="validFunc()">
+					<datalist id="interests">
+						<!-- music -->
+					  <option value="גיטרה">
+					  <option value="פסנתר">
+					  <option value="כינור">
+					  	<!-- art -->
+					  <option value="תפירה">
+					  <option value="סריגה">
+					  <option value="ציור">
+					  <option value="פיסול">
+					  	<!-- sport -->
+					  <option value="כדורגל">
+					  <option value="כדורסל">
+					  	<!-- coocking -->
+					  <option value="בישול">
+					  <option value="אפיה">
+					  	<!-- dance -->
+					  <option value="ריקוד">
+					  <option value="בלט">
+					  <option value="סלסה">
+					</datalist>
+					<div id="inputs">
+						<div class="form-group">
+							<input type="text" name="activity1" class="form-control inp" required list="interests">
+						</div>
+						<div class="form-group">
+							<input type="text" name="activity2" class="form-control inp" list="interests">
+						</div>
+					</div>
+					<button type="button" class="btn btn-default" id="add"><div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">+</span></div> <div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">הוספת עוד שורה</span></div></button>
+					<h2>מה הזמן הפנוי שלך?</h2>
+					<p>נא לבחור את הזמן שבדרך כלל פנוי עבורך.</p>
+					<div id="calender">
+						<table>
+							<tr>
+								<th></th>
+						    <th>א'</th>
+						    <th>ב'</th> 
+						    <th>ג'</th>
+						    <th>ד'</th>
+						    <th>ה'</th>
+						    <th>ו'</th>
+						    <th>ש'</th>
+						  </tr>
+						  <tr>
+						    <td>בוקר</td>
+						    <td><div id="1"></div></td> 
+						    <td><div id="2"></div></td>
+						    <td><div id="3"></div></td> 
+						    <td><div id="4"></div></td>
+						    <td><div id="5"></div></td> 
+						    <td><div id="6"></div></td>
+						    <td><div id="7"></div></td>
+						  </tr>
+						  <tr>
+						    <td>צהריים</td>
+						    <td><div id="8"></div></td> 
+						    <td><div id="9"></div></td>
+						    <td><div id="10"></div></td> 
+						    <td><div id="11"></div></td>
+						    <td><div id="12"></div></td> 
+						    <td><div id="13"></div></td>
+						    <td><div id="14"></div></td>
+						  </tr>
+						  <tr>
+						    <td>ערב</td>
+						    <td><div id="15"></div></td> 
+						    <td><div id="16"></div></td>
+						    <td><div id="17"></div></td> 
+						    <td><div id="18"></div></td>
+						    <td><div id="19"></div></td> 
+						    <td><div id="20"></div></td>
+						    <td><div id="21"></div></td>
+						  </tr>
+						</table>
+					</div>
+					<button type="submit" class="btn btn-default" id="next"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">לשלב הבא</span></button>
+				</form>
+			</div>
+		</div>
+		<br>
+	<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="script1.js"></script>
+	</body>
+</html>
