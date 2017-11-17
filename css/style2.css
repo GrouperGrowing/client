@@ -1,22 +1,22 @@
 @font-face {
 	font-family: 'OpenSansRegular'; /*a name to be used later*/
-    src: url('OpenSansHebrew-Regular.ttf'); /*URL to font*/
+    src: url('../assets/fonts/OpenSansHebrew-Regular.ttf'); /*URL to font*/
 }
 
 @font-face {
 	font-family: 'OpenSansLight'; /*a name to be used later*/
-    src: url('OpenSansHebrew-Light.ttf'); /*URL to font*/
+    src: url('../assets/fonts/OpenSansHebrew-Light.ttf'); /*URL to font*/
 }
 
 @font-face {
 	font-family: 'OpenSansBold'; /*a name to be used later*/
-    src: url('OpenSansHebrew-Bold.ttf'); /*URL to font*/
+    src: url('../assets/fonts/OpenSansHebrew-Bold.ttf'); /*URL to font*/
 }
 
 body {
 	direction: rtl;
 	font-family: OpenSansLight, sans-serif;
-	background-image: url(grouper_BG.png);
+	background-image: url(../assets/images/grouper_BG.png);
     background-repeat: repeat;
     background-position: top left;
     background-attachment: fixed;
@@ -143,6 +143,10 @@ form {
 .form-inline .selc {
 	width: 27%;
 	margin-left: 0;
+}
+
+#forms .selc select.form-control {
+	width: 100%;
 }
 
 #sel1, #sel2 {

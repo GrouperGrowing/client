@@ -1,18 +1,17 @@
 $(document).ready(function(){
 
 	var $input = '<form class="form-inline">' +
-				'<div class="form-group inpg" id="teach2div">' +
-					'<input type="text" class="form-control" id="teach2" list="interests">' +
+				'<div class="form-group inpg">' +
+					'<input type="text" class="form-control" list="interests" style="width:100%">' +
 				'</div>' +
-				'<div class="form-group selc" style="width:27%;margin-left:0">' +
-					'<div class="btn-group bootstrap-select sel" style="width:100%;">' +
+				'<div class="form-group selc">' +
 					'<select class="form-control">' +
 							  '<option>נסיון</option>' +
 							  '<option>מתחיל</option>' +
 							  '<option>מנוסה</option>' +
 							  '<option>מתקדם</option>' +
 							  '<option>מומחה</option>' +
-						  	'</select></div>' +
+						  	'</select>' +
 				'</div>' +
 			  '</form>';
 

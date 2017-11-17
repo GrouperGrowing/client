@@ -1,26 +1,59 @@
 @font-face {
 	font-family: 'OpenSansRegular'; /*a name to be used later*/
-    src: url('OpenSansHebrew-Regular.ttf'); /*URL to font*/
+    src: url('../assets/fonts/OpenSansHebrew-Regular.ttf'); /*URL to font*/
 }
 
 @font-face {
 	font-family: 'OpenSansLight'; /*a name to be used later*/
-    src: url('OpenSansHebrew-Light.ttf'); /*URL to font*/
+    src: url('../assets/fonts/OpenSansHebrew-Light.ttf'); /*URL to font*/
 }
 
 @font-face {
 	font-family: 'OpenSansBold'; /*a name to be used later*/
-    src: url('OpenSansHebrew-Bold.ttf'); /*URL to font*/
+    src: url('../assets/fonts/OpenSansHebrew-Bold.ttf'); /*URL to font*/
 }
 
 body {
 	direction: rtl;
 	font-family: OpenSansLight, sans-serif;
-	background-image: url(grouper_BG.png);
+	background-image: url(../assets/images/grouper_BG.png);
     background-repeat: repeat;
     background-position: top left;
     background-attachment: fixed;
     background-size:cover;
+}
+
+/*.form-group {
+	margin-left: 2%;
+}
+
+.inpg {
+	width: 70%;
+}
+
+.inpg input {
+	width: 100%;
+}
+
+.selc {
+	width: 27%;
+	margin-left: 0;
+}
+
+.selc select{
+	width: 100%;
+}*/
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 3%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container input {
+	flex-basis: 270%;
 }
 
 #page {
@@ -111,8 +144,12 @@ button:hover {
 	margin-top: 10%;
 }
 
-#calender {
+#addressDiv {
 	margin-bottom: 2.5%;
+}
+
+#addressDiv p {
+	margin-bottom: 3%;
 }
 
 #calender div {

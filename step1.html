@@ -4,50 +4,57 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="styleStep1.css" />
+		<link rel="stylesheet" type="text/css" href="css/styleStep1.css" />
 		<title>Grouper</title>
 	</head>
 	<body>
 		<div id="page">
 			<div id="logo1">
-				<img src="grouper logo-03.png" width="300">
+				<img src="assets/images/grouper logo-03.png" width="300">
 			</div>
 			<div id="content">
 				<h2 id="welcomeH">בשביל מה היית מוכן לצאת מהבית?</h2>
 				<p>בכל שורה מילה אחת שמתארת פעילות שמעניינת אותך.</p>
 			</div>
 			<div class="register step">
-				<form id="act-form" action="step2.html" onSubmit="validFunc()">
-					<datalist id="interests">
-						<!-- music -->
-					  <option value="גיטרה">
-					  <option value="פסנתר">
-					  <option value="כינור">
-					  	<!-- art -->
-					  <option value="תפירה">
-					  <option value="סריגה">
-					  <option value="ציור">
-					  <option value="פיסול">
-					  	<!-- sport -->
-					  <option value="כדורגל">
-					  <option value="כדורסל">
-					  	<!-- coocking -->
-					  <option value="בישול">
-					  <option value="אפיה">
-					  	<!-- dance -->
-					  <option value="ריקוד">
-					  <option value="בלט">
-					  <option value="סלסה">
-					</datalist>
-					<div id="inputs">
-						<div class="form-group">
+				<form id="act-form" action="step2.html" onSubmit="return validFunc()">
+						<datalist id="interests">
+							<!-- music -->
+						  <option value="גיטרה">
+						  <option value="פסנתר">
+						  <option value="כינור">
+						  	<!-- art -->
+						  <option value="תפירה">
+						  <option value="סריגה">
+						  <option value="ציור">
+						  <option value="פיסול">
+						  	<!-- sport -->
+						  <option value="כדורגל">
+						  <option value="כדורסל">
+						  	<!-- coocking -->
+						  <option value="בישול">
+						  <option value="אפיה">
+						  	<!-- dance -->
+						  <option value="ריקוד">
+						  <option value="בלט">
+						  <option value="סלסה">
+						</datalist>
+						<div class="container">
 							<input type="text" name="activity1" class="form-control inp" required list="interests">
+							<select class="form-control">
+							  <option>להשתתף</option>
+							  <option>ללמוד</option>
+							</select>
 						</div>
-						<div class="form-group">
+						<div class="container">
 							<input type="text" name="activity2" class="form-control inp" list="interests">
+							<select class="form-control">
+							  <option>להשתתף</option>
+							  <option>ללמוד</option>
+							</select>
 						</div>
-					</div>
-					<button type="button" class="btn btn-default" id="add"><div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">+</span></div> <div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">הוספת עוד שורה</span></div></button>
+						<button type="button" class="btn btn-default" id="add"><div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">+</span></div> <div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">הוספת עוד שורה</span></div></button>
+					</form>
 					<h2>מה הזמן הפנוי שלך?</h2>
 					<p>נא לבחור את הזמן שבדרך כלל פנוי עבורך.</p>
 					<div id="calender">
@@ -94,12 +101,51 @@
 						  </tr>
 						</table>
 					</div>
+					<div id="addressDiv" class="form-group">
+						<h2 id="welcomeH">באיזה איזור אתה גר?</h1>
+						<p>נא לבחור איזור מגורים.</p>
+						<select class="form-control" id="sel1" class="form-control">
+							<option>בחר איזור</option>
+							<optgroup label="צפון">
+								<option>חיפה והסביבה</option>
+								<option>קריות והסביבה</option>
+								<option>עכו - נהריה והסביבה</option>
+								<option>גליל עליון</option>
+								<option>הכנרת והסביבה</option>
+								<option>כרמיאל והסביבה</option>
+								<option>נצרת - שפרעם והסביבה</option>
+								<option>ראש פינה החולה</option>
+								<option>גליל תחתון</option>
+								<option>הגולן</option>
+							</optgroup>
+							<optgroup label="חדרה זכרון והעמקים">
+								<option>זכרון וחוף הכרמל</option>
+								<option>חדרה והסביבה</option>
+								<option>קיסריה והסביבה</option>
+								<option>יקנעם טבעון והסביבה</option>
+								<option>עמק בית שאן</option>
+								<option>עפולה והעמקים</option>
+								<option>רמת מנשה</option>
+							</optgroup>
+							<optgroup label="השרון">
+								<option>נתניה והסביבה</option>
+								<option>רמת השרון - הרצליה</option>
+								<option>רעננה - כפר סבא</option>
+								<option>הוד השרון והסביבה</option>
+								<option>דרום השרון</option>
+								<option>צפון השרון</option>
+							</optgroup>
+							<optgroup label="מרכז">
+
+							</optgroup>
+						</select>
+					</div>
 					<button type="submit" class="btn btn-default" id="next"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">לשלב הבא</span></button>
 				</form>
 			</div>
 		</div>
 		<br>
-	<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="script1.js"></script>
+	<script type="text/javascript" src="lib/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/script1.js"></script>
 	</body>
 </html>
