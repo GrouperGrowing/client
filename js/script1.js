@@ -25,10 +25,12 @@ $(document).ready(function(){
 	function validateCal() {
 		var flag = 0;
 		var id;
+		var font;
 		for (var i = 1; i < 22; i++) {
-			id = ""+i;
-			console.log(document.getElementById(id).style.fontFamily);
-			if (document.getElementById(""+i).style.fontFamily === "sans-serif") {
+			id = "#"+i;
+			font = $(id).css(fontFamily);
+			console.lof(font);
+			if (font === "sans-serif") {
 				flag = 1;
 				break;
 			}
@@ -46,6 +48,7 @@ $(document).ready(function(){
 		var flag;
 		var counter = 0;
 		var option;
+		alert("hello");
 		$("input").each(function() {
 			flag = 0;
 			option = $("#interests option:first-child");
@@ -68,7 +71,7 @@ $(document).ready(function(){
 			}
 		});
 		if (counter === $("input").size() && validateCal()) {
-			window.location.href= "step3.html";
+			window.location.href= "step2.html";
 		} else if (!validateCal()) {
 			alert("נא למלא זמן שבו אתם פנויים.")
 		} else {

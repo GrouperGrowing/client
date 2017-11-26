@@ -17,7 +17,7 @@
 				<p>בכל שורה מילה אחת שמתארת פעילות שמעניינת אותך.</p>
 			</div>
 			<div class="register step">
-				<form id="act-form" action="step2.html" onSubmit="return validFunc()">
+				<form id="act-form" action="step2.html" onSubmit="validFunc()">
 						<datalist id="interests">
 							<!-- music -->
 						  <option value="גיטרה">
@@ -40,7 +40,7 @@
 						  <option value="סלסה">
 						</datalist>
 						<div class="container">
-							<input type="text" name="activity1" class="form-control inp" required list="interests">
+							<input type="text" name="activity1" class="form-control inp" required list="interests" autocomplete="off">
 							<select class="form-control">
 							  <option>להשתתף</option>
 							  <option>ללמוד</option>
@@ -54,7 +54,6 @@
 							</select>
 						</div>
 						<button type="button" class="btn btn-default" id="add"><div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">+</span></div> <div class="plus"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">הוספת עוד שורה</span></div></button>
-					</form>
 					<h2>מה הזמן הפנוי שלך?</h2>
 					<p>נא לבחור את הזמן שבדרך כלל פנוי עבורך.</p>
 					<div id="calender">
@@ -136,7 +135,49 @@
 								<option>צפון השרון</option>
 							</optgroup>
 							<optgroup label="מרכז">
-
+								<option>תל אביב</option>
+								<option>תל אביב - מרכז</option>
+								<option>תל אביב - צפון</option>
+								<option>תל אביב - דרום</option>
+								<option>תל אביב - מזרח</option>
+								<option>ראשון לציון והסביבה</option>
+								<option>חולון - בת ים</option>
+								<option>רמת גן - גבעתיים</option>
+								<option>פתח תקווה והסביבה</option>
+								<option>ראש העין והסביבה</option>
+								<option>בקעת אונו</option>
+								<option>רמלה - לוד</option>
+								<option>בני ברק - גבעת שמואל</option>
+								<option>עמק איילון</option>
+								<option>שוהם והסביבה</option>
+								<option>מודיעין והסביבה</option>
+							</optgroup>
+							<optgroup label="איזור ירושלים">
+								<option>ירושלים</option>
+								<option>בית שמש והסביבה</option>
+								<option>הרי יהודה - מבשרת והסביבה</option>
+								<option>מעלה אדומים והסביבה</option>
+							</optgroup>
+							<optgroup label="יהודה שומרון ובקעת הירדן">
+								<option>ישובי דרום ההר</option>
+								<option>ישובי שומרון</option>
+								<option>גוש עציון</option>
+								<option>בקעת הירדן וצפון ים המלח</option>
+								<option>אריאל וישובי יהודה</option>
+							</optgroup>
+							<optgroup label="שפלה מישור חוף דרומי">
+								<option>נס ציונה - רחובות</option>
+								<option>אשדוד - אשקלון והסביבה</option>
+								<option>גדרה - יבנה והסביבה</option>
+								<option>קרית גת והסביבה</option>
+								<option>שפלה</option>
+							</optgroup>
+							<optgroup label="דרום">
+								<option>באר שבע והסביבה</option>
+								<option>אילת וערבה</option>
+								<option>ישובי הנגב</option>
+								<option>הנגב המערבי</option>
+								<option>דרום ים המלח</option>
 							</optgroup>
 						</select>
 					</div>
