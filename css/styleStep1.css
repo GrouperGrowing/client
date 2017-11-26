@@ -176,7 +176,8 @@ button:hover {
 }
 
 #pref select.form-control {
-	height: 48px;
+	height: 45px;
+	margin-top: -10%;
 }
 
 #calender table {
