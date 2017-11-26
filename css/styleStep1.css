@@ -161,16 +161,34 @@ button:hover {
 	box-sizing: border-box;
 }
 
-table {
+#pref {
+	width: 100%;
+}
+
+#pref td:first-child, #pref td:nth-child(3) {
+	width: 80%;
+	padding-left: 2%;
+}
+
+#pref td:nth-child(2) {
+	padding-bottom: 3%;
+	margin-top: -2%;
+}
+
+#pref select.form-control {
+	height: 48px;
+}
+
+#calender table {
 	width: 50%;
 	margin: 0 auto;
 }
 
-td {
+#calender td {
 	padding-bottom: 2%;
 }
 
-th {
+#calender th {
 	text-align: center;
 }
 
