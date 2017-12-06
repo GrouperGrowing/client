@@ -1,13 +1,23 @@
 $(document).ready(function(){
 
 	//creats a new input field
-	$input = '<div class="form-group">' +
-			'<input type="text" name="activity2" class="form-control inp" list="interests">' +
-			'</div>';
+	$input = '<tr> ' +
+				'<div class="container">' +
+					'<td>' +
+						'<input type="text" name="activity2" class="form-control inp" list="interests">' +
+					'</td>' +
+					'<td>' +
+						'<select class="form-control">' +
+						  '<option>להשתתף</option>' +
+							'<option>ללמוד</option>' +
+						'</select>' +
+					'</td>' +
+				'</div>' +
+			'</tr>';
 
 	//a function to add the new input field	to the page when #add button is clicked	
 	$('#add').on('click', function() {
-		$('#inputs').append($input);
+		$('#pref').append($input);
 	});
 
 	//a function that marks which days were chosen in the #calender table
