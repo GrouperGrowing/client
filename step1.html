@@ -17,7 +17,7 @@
 				<p>בכל שורה מילה אחת שמתארת פעילות שמעניינת אותך.</p>
 			</div>
 			<div class="register step">
-				<form id="act-form" action="step2.html" onSubmit="validFunc()">
+				<form id="act-form">
 						<datalist id="interests">
 							<!-- music -->
 						  <option value="גיטרה">
@@ -43,7 +43,7 @@
 							<tr>
 								<div class="container">
 									<td>
-										<input type="text" name="activity1" class="form-control inp" required list="interests" autocomplete="off">
+										<input type="text" name="activity1" class="form-control inp" required list="interests" autocomplete="off" id="inp1">
 									</td>
 									<td>
 										<select class="form-control">
@@ -195,7 +195,7 @@
 							</optgroup>
 						</select>
 					</div>
-					<button type="submit" class="btn btn-default" id="next"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">לשלב הבא</span></button>
+					<button type="button" class="btn btn-default" id="next"><span style="font-size:1.5em; margin:0; font-family:OpenSansBold">לשלב הבא</span></button>
 				</form>
 			</div>
 		</div>

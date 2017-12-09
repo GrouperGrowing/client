@@ -38,8 +38,8 @@ $(document).ready(function(){
 		var font;
 		for (var i = 1; i < 22; i++) {
 			id = "#"+i;
-			font = $(id).css(fontFamily);
-			console.lof(font);
+			font = $(id).css("font-family");
+			console.log(font);
 			if (font === "sans-serif") {
 				flag = 1;
 				break;
@@ -50,6 +50,7 @@ $(document).ready(function(){
 			return true;
 		}
 
+		alert("נא למלא זמן שבו אתם פנויים.");
 		return false;
 	}
 
@@ -58,7 +59,21 @@ $(document).ready(function(){
 		var flag;
 		var counter = 0;
 		var option;
-		alert("hello");
+		if ($("#inp1").val() == "" || $("#sel1").val() == "") {
+			if ($("#inp1").val() == "" && $("#sel1").val() == ""){
+				$("#inp1").css("border", "1.5px solid red");
+				$("#sel1").css("border", "1.5px solid red");
+			} else if ($("#inp1").val() == "") {
+				$("#inp1").css("border", "1.5px solid red");
+				$("#sel1").css("border", "1px solid rgba(0,0,0,.15)");
+			} else {
+				$("#inp1").css("border", "1px solid rgba(0,0,0,.15)");
+				$("#sel1").css("border", "1.5px solid red");
+			}
+			alert("חובה למלא את השדות המסומנים באדום");
+			return false;
+		}
+
 		$("input").each(function() {
 			flag = 0;
 			option = $("#interests option:first-child");
@@ -81,11 +96,12 @@ $(document).ready(function(){
 			}
 		});
 		if (counter === $("input").size() && validateCal()) {
-			window.location.href= "step2.html";
-		} else if (!validateCal()) {
-			alert("נא למלא זמן שבו אתם פנויים.")
+			window.location.href = "step2.html"
+			return true;
 		} else {
 			return false;
 		}
 	}
+
+	$('#next').on('click', validFunc);
 });
